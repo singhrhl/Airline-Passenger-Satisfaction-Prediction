@@ -1,0 +1,5 @@
+.vscode/
+backend/.backend-env/
+frontend/.frontend-env/
+guide.md
+*/__pycache__/

@@ -1,0 +1,191 @@
+{
+  "best_params": {
+    "classifier__learning_rate": 0.1,
+    "classifier__max_depth": null,
+    "classifier__n_estimators": 200
+  },
+  "models": {
+    "Logistic_Regression_baseline": {
+      "roc_auc": 0.9261469587539937,
+      "classification_report": {
+        "satisfied": {
+          "precision": 0.8666605905942398,
+          "recall": 0.8339033587652372,
+          "f1-score": 0.8499664804469274,
+          "support": 11403.0
+        },
+        "dissatisfied": {
+          "precision": 0.8737669954678753,
+          "recall": 0.8996088657105606,
+          "f1-score": 0.8864996449944214,
+          "support": 14573.0
+        },
+        "accuracy": 0.8707653218355405,
+        "macro avg": {
+          "precision": 0.8702137930310576,
+          "recall": 0.866756112237899,
+          "f1-score": 0.8682330627206744,
+          "support": 25976.0
+        },
+        "weighted avg": {
+          "precision": 0.8706474106675186,
+          "recall": 0.8707653218355405,
+          "f1-score": 0.870462238336927,
+          "support": 25976.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          9509,
+          1894
+        ],
+        [
+          1463,
+          13110
+        ]
+      ]
+    },
+    "XGBoost_baseline": {
+      "roc_auc": 0.9995392051961512,
+      "classification_report": {
+        "satisfied": {
+          "precision": 0.9922096317280453,
+          "recall": 0.9828992370428834,
+          "f1-score": 0.9875324904180801,
+          "support": 11403.0
+        },
+        "dissatisfied": {
+          "precision": 0.986716621253406,
+          "recall": 0.9939614355314623,
+          "f1-score": 0.990325778552627,
+          "support": 14573.0
+        },
+        "accuracy": 0.9891053279950723,
+        "macro avg": {
+          "precision": 0.9894631264907257,
+          "recall": 0.9884303362871729,
+          "f1-score": 0.9889291344853536,
+          "support": 25976.0
+        },
+        "weighted avg": {
+          "precision": 0.9891279547320907,
+          "recall": 0.9891053279950723,
+          "f1-score": 0.989099574957068,
+          "support": 25976.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          11208,
+          195
+        ],
+        [
+          88,
+          14485
+        ]
+      ]
+    },
+    "Best_XGB": {
+      "roc_auc": 0.9987243037301933,
+      "classification_report": {
+        "satisfied": {
+          "precision": 0.9867904319885755,
+          "recall": 0.9695694115583618,
+          "f1-score": 0.9781041270402973,
+          "support": 11403.0
+        },
+        "dissatisfied": {
+          "precision": 0.976509612780937,
+          "recall": 0.9898442324847321,
+          "f1-score": 0.9831317089793832,
+          "support": 14573.0
+        },
+        "accuracy": 0.9809439482599323,
+        "macro avg": {
+          "precision": 0.9816500223847562,
+          "recall": 0.979706822021547,
+          "f1-score": 0.9806179180098402,
+          "support": 25976.0
+        },
+        "weighted avg": {
+          "precision": 0.9810227087704928,
+          "recall": 0.9809439482599323,
+          "f1-score": 0.9809246903140231,
+          "support": 25976.0
+        }
+      },
+      "confusion_matrix": [
+        [
+          11056,
+          347
+        ],
+        [
+          148,
+          14425
+        ]
+      ]
+    }
+  },
+  "shap_global_importance": [
+    {
+      "feature": "remainder__Inflight wifi service",
+      "importance": 1.9896413087844849
+    },
+    {
+      "feature": "cat__Type of Travel_Business travel",
+      "importance": 1.6241780519485474
+    },
+    {
+      "feature": "remainder__Online boarding",
+      "importance": 1.1200824975967407
+    },
+    {
+      "feature": "cat__Customer Type_Loyal Customer",
+      "importance": 0.8959580659866333
+    },
+    {
+      "feature": "cat__Class_Business",
+      "importance": 0.360604852437973
+    },
+    {
+      "feature": "remainder__Checkin service",
+      "importance": 0.3170228898525238
+    },
+    {
+      "feature": "remainder__Inflight service",
+      "importance": 0.2688462734222412
+    },
+    {
+      "feature": "remainder__Seat comfort",
+      "importance": 0.2646864354610443
+    },
+    {
+      "feature": "remainder__Baggage handling",
+      "importance": 0.2635316252708435
+    },
+    {
+      "feature": "remainder__Inflight entertainment",
+      "importance": 0.2625924050807953
+    },
+    {
+      "feature": "remainder__Gate location",
+      "importance": 0.2611241042613983
+    },
+    {
+      "feature": "remainder__Age",
+      "importance": 0.24413307011127472
+    },
+    {
+      "feature": "remainder__Cleanliness",
+      "importance": 0.22295790910720825
+    },
+    {
+      "feature": "remainder__On-board service",
+      "importance": 0.2144957035779953
+    },
+    {
+      "feature": "remainder__Departure/Arrival time convenient",
+      "importance": 0.2019839733839035
+    }
+  ]
+}
