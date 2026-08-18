@@ -1,0 +1,563 @@
+{
+  "total_passengers": 103904,
+  "overall_satisfaction_rate": 0.43333269171542965,
+  "satisfaction_by_class": [
+    {
+      "travel_class": "Eco Plus",
+      "satisfaction_rate": 0.2460635174806512
+    },
+    {
+      "travel_class": "Business",
+      "satisfaction_rate": 0.6942514849491593
+    },
+    {
+      "travel_class": "Eco",
+      "satisfaction_rate": 0.18613755481869718
+    }
+  ],
+  "satisfaction_by_travel_type": [
+    {
+      "type_of_travel": "Personal Travel",
+      "satisfaction_rate": 0.10167757139756271
+    },
+    {
+      "type_of_travel": "Business travel",
+      "satisfaction_rate": 0.5825971669806713
+    }
+  ],
+  "rating_distributions": [
+    {
+      "feature": "Inflight wifi service",
+      "mean_rating": 2.72968316907915,
+      "value_counts": {
+        "3": 25868,
+        "2": 25830,
+        "4": 19794,
+        "1": 17840,
+        "5": 11469,
+        "0": 3103
+      }
+    },
+    {
+      "feature": "Departure/Arrival time convenient",
+      "mean_rating": 3.06029604250077,
+      "value_counts": {
+        "4": 25546,
+        "5": 22403,
+        "3": 17966,
+        "2": 17191,
+        "1": 15498,
+        "0": 5300
+      }
+    },
+    {
+      "feature": "Ease of Online booking",
+      "mean_rating": 2.7569006005543577,
+      "value_counts": {
+        "3": 24449,
+        "2": 24021,
+        "4": 19571,
+        "1": 17525,
+        "5": 13851,
+        "0": 4487
+      }
+    },
+    {
+      "feature": "Gate location",
+      "mean_rating": 2.9768825069294733,
+      "value_counts": {
+        "3": 28577,
+        "4": 24426,
+        "2": 19459,
+        "1": 17562,
+        "5": 13879,
+        "0": 1
+      }
+    },
+    {
+      "feature": "Food and drink",
+      "mean_rating": 3.2021288882044963,
+      "value_counts": {
+        "4": 24359,
+        "5": 22313,
+        "3": 22300,
+        "2": 21988,
+        "1": 12837,
+        "0": 107
+      }
+    },
+    {
+      "feature": "Online boarding",
+      "mean_rating": 3.250375346473668,
+      "value_counts": {
+        "4": 30762,
+        "3": 21804,
+        "5": 20713,
+        "2": 17505,
+        "1": 10692,
+        "0": 2428
+      }
+    },
+    {
+      "feature": "Seat comfort",
+      "mean_rating": 3.4393959809054513,
+      "value_counts": {
+        "4": 31765,
+        "5": 26470,
+        "3": 18696,
+        "2": 14897,
+        "1": 12075,
+        "0": 1
+      }
+    },
+    {
+      "feature": "Inflight entertainment",
+      "mean_rating": 3.358157530027718,
+      "value_counts": {
+        "4": 29423,
+        "5": 25213,
+        "3": 19139,
+        "2": 17637,
+        "1": 12478,
+        "0": 14
+      }
+    },
+    {
+      "feature": "On-board service",
+      "mean_rating": 3.382362565445026,
+      "value_counts": {
+        "4": 30867,
+        "5": 23648,
+        "3": 22833,
+        "2": 14681,
+        "1": 11872,
+        "0": 3
+      }
+    },
+    {
+      "feature": "Leg room service",
+      "mean_rating": 3.3510548198336925,
+      "value_counts": {
+        "4": 28789,
+        "5": 24667,
+        "3": 20098,
+        "2": 19525,
+        "1": 10353,
+        "0": 472
+      }
+    },
+    {
+      "feature": "Baggage handling",
+      "mean_rating": 3.6318332306744687,
+      "value_counts": {
+        "4": 37383,
+        "5": 27131,
+        "3": 20632,
+        "2": 11521,
+        "1": 7237
+      }
+    },
+    {
+      "feature": "Checkin service",
+      "mean_rating": 3.304290498922082,
+      "value_counts": {
+        "4": 29055,
+        "3": 28446,
+        "5": 20619,
+        "2": 12893,
+        "1": 12890,
+        "0": 1
+      }
+    },
+    {
+      "feature": "Inflight service",
+      "mean_rating": 3.6404277024946103,
+      "value_counts": {
+        "4": 37945,
+        "5": 27116,
+        "3": 20299,
+        "2": 11457,
+        "1": 7084,
+        "0": 3
+      }
+    },
+    {
+      "feature": "Cleanliness",
+      "mean_rating": 3.2863508623344626,
+      "value_counts": {
+        "4": 27179,
+        "3": 24574,
+        "5": 22689,
+        "2": 16132,
+        "1": 13318,
+        "0": 12
+      }
+    }
+  ],
+  "feature_correlations": {
+    "Age": {
+      "Age": 1.0,
+      "Flight Distance": 0.09946084164551727,
+      "Departure Delay in Minutes": -0.010152230154219963,
+      "Arrival Delay in Minutes": -0.012146863576691471,
+      "Inflight wifi service": 0.017859320920329914,
+      "Departure/Arrival time convenient": 0.03812515171929467,
+      "Ease of Online booking": 0.024842002786248218,
+      "Gate location": -0.0013296572943330828,
+      "Food and drink": 0.023000477347269704,
+      "Online boarding": 0.20893929603072442,
+      "Seat comfort": 0.16027673775070714,
+      "Inflight entertainment": 0.07644448708282595,
+      "On-board service": 0.05759447459675862,
+      "Leg room service": 0.04058276402553854,
+      "Baggage handling": -0.04752930821529978,
+      "Checkin service": 0.03548237585218939,
+      "Inflight service": -0.04942722005194537,
+      "Cleanliness": 0.05361055072612423
+    },
+    "Flight Distance": {
+      "Age": 0.09946084164551727,
+      "Flight Distance": 1.0,
+      "Departure Delay in Minutes": 0.0021580114615675997,
+      "Arrival Delay in Minutes": -0.002425811329034678,
+      "Inflight wifi service": 0.007131199035059713,
+      "Departure/Arrival time convenient": -0.02004291647457157,
+      "Ease of Online booking": 0.06571656593297781,
+      "Gate location": 0.004793232484294276,
+      "Food and drink": 0.05699353130657888,
+      "Online boarding": 0.21486909340494043,
+      "Seat comfort": 0.1573325222406098,
+      "Inflight entertainment": 0.1287403252282247,
+      "On-board service": 0.1095264209414938,
+      "Leg room service": 0.1339156015833073,
+      "Baggage handling": 0.06318413011189958,
+      "Checkin service": 0.07307176819697524,
+      "Inflight service": 0.05753979518896882,
+      "Cleanliness": 0.0931485974847914
+    },
+    "Departure Delay in Minutes": {
+      "Age": -0.010152230154219963,
+      "Flight Distance": 0.0021580114615675997,
+      "Departure Delay in Minutes": 1.0,
+      "Arrival Delay in Minutes": 0.9654809013755764,
+      "Inflight wifi service": -0.017402211431094404,
+      "Departure/Arrival time convenient": 0.0010051315647691854,
+      "Ease of Online booking": -0.006370606109393329,
+      "Gate location": 0.005467106350314137,
+      "Food and drink": -0.029926215501083448,
+      "Online boarding": -0.01898241639315973,
+      "Seat comfort": -0.027897923863283138,
+      "Inflight entertainment": -0.027488791819078567,
+      "On-board service": -0.03156916895167294,
+      "Leg room service": 0.01436256222572512,
+      "Baggage handling": -0.0055731927189833184,
+      "Checkin service": -0.018452937852878614,
+      "Inflight service": -0.05481255208719383,
+      "Cleanliness": -0.014092583302395389
+    },
+    "Arrival Delay in Minutes": {
+      "Age": -0.012146863576691471,
+      "Flight Distance": -0.002425811329034678,
+      "Departure Delay in Minutes": 0.9654809013755764,
+      "Arrival Delay in Minutes": 1.0,
+      "Inflight wifi service": -0.019095059222986526,
+      "Departure/Arrival time convenient": -0.0008641870815691195,
+      "Ease of Online booking": -0.007983622992803922,
+      "Gate location": 0.0051428788826568496,
+      "Food and drink": -0.032524226934486,
+      "Online boarding": -0.02194861747154393,
+      "Seat comfort": -0.02990011776577802,
+      "Inflight entertainment": -0.030702811556835123,
+      "On-board service": -0.0352268122720809,
+      "Leg room service": 0.01184322592470244,
+      "Baggage handling": -0.00854167358739423,
+      "Checkin service": -0.02036937136145783,
+      "Inflight service": -0.059195844954586754,
+      "Cleanliness": -0.015773723472618694
+    },
+    "Inflight wifi service": {
+      "Age": 0.017859320920329914,
+      "Flight Distance": 0.007131199035059713,
+      "Departure Delay in Minutes": -0.017402211431094404,
+      "Arrival Delay in Minutes": -0.019095059222986526,
+      "Inflight wifi service": 1.0,
+      "Departure/Arrival time convenient": 0.34384450591707294,
+      "Ease of Online booking": 0.715856141267444,
+      "Gate location": 0.33624844579294455,
+      "Food and drink": 0.13471759280671244,
+      "Online boarding": 0.4569702391680647,
+      "Seat comfort": 0.12265781640105258,
+      "Inflight entertainment": 0.20932121443521967,
+      "On-board service": 0.12149991931551724,
+      "Leg room service": 0.16047268504590884,
+      "Baggage handling": 0.12092333472744815,
+      "Checkin service": 0.04319261838355081,
+      "Inflight service": 0.1104413916513954,
+      "Cleanliness": 0.1326979160936807
+    },
+    "Departure/Arrival time convenient": {
+      "Age": 0.03812515171929467,
+      "Flight Distance": -0.02004291647457157,
+      "Departure Delay in Minutes": 0.0010051315647691854,
+      "Arrival Delay in Minutes": -0.0008641870815691195,
+      "Inflight wifi service": 0.34384450591707294,
+      "Departure/Arrival time convenient": 1.0,
+      "Ease of Online booking": 0.43696115424654514,
+      "Gate location": 0.4447571390334804,
+      "Food and drink": 0.004906371119114535,
+      "Online boarding": 0.0701187122913004,
+      "Seat comfort": 0.011344159718724859,
+      "Inflight entertainment": -0.004861423623927252,
+      "On-board service": 0.06888232743982475,
+      "Leg room service": 0.012441284477964762,
+      "Baggage handling": 0.07212561381399696,
+      "Checkin service": 0.09333300968368619,
+      "Inflight service": 0.07331752705146462,
+      "Cleanliness": 0.014292462071912058
+    },
+    "Ease of Online booking": {
+      "Age": 0.024842002786248218,
+      "Flight Distance": 0.06571656593297781,
+      "Departure Delay in Minutes": -0.006370606109393329,
+      "Arrival Delay in Minutes": -0.007983622992803922,
+      "Inflight wifi service": 0.715856141267444,
+      "Departure/Arrival time convenient": 0.43696115424654514,
+      "Ease of Online booking": 1.0,
+      "Gate location": 0.4586554660895563,
+      "Food and drink": 0.03187335016636239,
+      "Online boarding": 0.4040742121779608,
+      "Seat comfort": 0.030014105353144353,
+      "Inflight entertainment": 0.04703228639950369,
+      "On-board service": 0.038832948505811975,
+      "Leg room service": 0.10760138298948618,
+      "Baggage handling": 0.03876236641859236,
+      "Checkin service": 0.011080760862057297,
+      "Inflight service": 0.03527240013018899,
+      "Cleanliness": 0.01617852505330637
+    },
+    "Gate location": {
+      "Age": -0.0013296572943330828,
+      "Flight Distance": 0.004793232484294276,
+      "Departure Delay in Minutes": 0.005467106350314137,
+      "Arrival Delay in Minutes": 0.0051428788826568496,
+      "Inflight wifi service": 0.33624844579294455,
+      "Departure/Arrival time convenient": 0.4447571390334804,
+      "Ease of Online booking": 0.4586554660895563,
+      "Gate location": 1.0,
+      "Food and drink": -0.0011586047174040018,
+      "Online boarding": 0.0016880222100853935,
+      "Seat comfort": 0.0036687785040983756,
+      "Inflight entertainment": 0.0035167267698150437,
+      "On-board service": -0.028373042456368854,
+      "Leg room service": -0.005873445111654661,
+      "Baggage handling": 0.002313445343460521,
+      "Checkin service": -0.03542748282779974,
+      "Inflight service": 0.0016807280588402593,
+      "Cleanliness": -0.00382994156308241
+    },
+    "Food and drink": {
+      "Age": 0.023000477347269704,
+      "Flight Distance": 0.05699353130657888,
+      "Departure Delay in Minutes": -0.029926215501083448,
+      "Arrival Delay in Minutes": -0.032524226934486,
+      "Inflight wifi service": 0.13471759280671244,
+      "Departure/Arrival time convenient": 0.004906371119114535,
+      "Ease of Online booking": 0.03187335016636239,
+      "Gate location": -0.0011586047174040018,
+      "Food and drink": 1.0,
+      "Online boarding": 0.23446825550361097,
+      "Seat comfort": 0.5745564522785715,
+      "Inflight entertainment": 0.6225120323639995,
+      "On-board service": 0.05907311712825321,
+      "Leg room service": 0.032497632590447356,
+      "Baggage handling": 0.0347461446781211,
+      "Checkin service": 0.08729900659010346,
+      "Inflight service": 0.03399281356069491,
+      "Cleanliness": 0.6577597343070511
+    },
+    "Online boarding": {
+      "Age": 0.20893929603072442,
+      "Flight Distance": 0.21486909340494043,
+      "Departure Delay in Minutes": -0.01898241639315973,
+      "Arrival Delay in Minutes": -0.02194861747154393,
+      "Inflight wifi service": 0.4569702391680647,
+      "Departure/Arrival time convenient": 0.0701187122913004,
+      "Ease of Online booking": 0.4040742121779608,
+      "Gate location": 0.0016880222100853935,
+      "Food and drink": 0.23446825550361097,
+      "Online boarding": 1.0,
+      "Seat comfort": 0.4202107259656956,
+      "Inflight entertainment": 0.28506619616942147,
+      "On-board service": 0.15544289374143452,
+      "Leg room service": 0.123950369269077,
+      "Baggage handling": 0.08328016469488611,
+      "Checkin service": 0.20446156302376026,
+      "Inflight service": 0.07457286303061139,
+      "Cleanliness": 0.33151713506558106
+    },
+    "Seat comfort": {
+      "Age": 0.16027673775070714,
+      "Flight Distance": 0.1573325222406098,
+      "Departure Delay in Minutes": -0.027897923863283138,
+      "Arrival Delay in Minutes": -0.02990011776577802,
+      "Inflight wifi service": 0.12265781640105258,
+      "Departure/Arrival time convenient": 0.011344159718724859,
+      "Ease of Online booking": 0.030014105353144353,
+      "Gate location": 0.0036687785040983756,
+      "Food and drink": 0.5745564522785715,
+      "Online boarding": 0.4202107259656956,
+      "Seat comfort": 1.0,
+      "Inflight entertainment": 0.6105901255624786,
+      "On-board service": 0.13197121755563823,
+      "Leg room service": 0.10555861232432089,
+      "Baggage handling": 0.0745416138021369,
+      "Checkin service": 0.1918544693613556,
+      "Inflight service": 0.06921779828334605,
+      "Cleanliness": 0.678533913541873
+    },
+    "Inflight entertainment": {
+      "Age": 0.07644448708282595,
+      "Flight Distance": 0.1287403252282247,
+      "Departure Delay in Minutes": -0.027488791819078567,
+      "Arrival Delay in Minutes": -0.030702811556835123,
+      "Inflight wifi service": 0.20932121443521967,
+      "Departure/Arrival time convenient": -0.004861423623927252,
+      "Ease of Online booking": 0.04703228639950369,
+      "Gate location": 0.0035167267698150437,
+      "Food and drink": 0.6225120323639995,
+      "Online boarding": 0.28506619616942147,
+      "Seat comfort": 0.6105901255624786,
+      "Inflight entertainment": 1.0,
+      "On-board service": 0.42015270128866755,
+      "Leg room service": 0.29969151321503495,
+      "Baggage handling": 0.3782100045444891,
+      "Checkin service": 0.1208672361727146,
+      "Inflight service": 0.4048551815476832,
+      "Cleanliness": 0.6918146374078886
+    },
+    "On-board service": {
+      "Age": 0.05759447459675862,
+      "Flight Distance": 0.1095264209414938,
+      "Departure Delay in Minutes": -0.03156916895167294,
+      "Arrival Delay in Minutes": -0.0352268122720809,
+      "Inflight wifi service": 0.12149991931551724,
+      "Departure/Arrival time convenient": 0.06888232743982475,
+      "Ease of Online booking": 0.038832948505811975,
+      "Gate location": -0.028373042456368854,
+      "Food and drink": 0.05907311712825321,
+      "Online boarding": 0.15544289374143452,
+      "Seat comfort": 0.13197121755563823,
+      "Inflight entertainment": 0.42015270128866755,
+      "On-board service": 1.0,
+      "Leg room service": 0.35549515824747824,
+      "Baggage handling": 0.5191341941120491,
+      "Checkin service": 0.24391432699439705,
+      "Inflight service": 0.5507821723190345,
+      "Cleanliness": 0.1232200545212144
+    },
+    "Leg room service": {
+      "Age": 0.04058276402553854,
+      "Flight Distance": 0.1339156015833073,
+      "Departure Delay in Minutes": 0.01436256222572512,
+      "Arrival Delay in Minutes": 0.01184322592470244,
+      "Inflight wifi service": 0.16047268504590884,
+      "Departure/Arrival time convenient": 0.012441284477964762,
+      "Ease of Online booking": 0.10760138298948618,
+      "Gate location": -0.005873445111654661,
+      "Food and drink": 0.032497632590447356,
+      "Online boarding": 0.123950369269077,
+      "Seat comfort": 0.10555861232432089,
+      "Inflight entertainment": 0.29969151321503495,
+      "On-board service": 0.35549515824747824,
+      "Leg room service": 1.0,
+      "Baggage handling": 0.36954409208395633,
+      "Checkin service": 0.15313722255903217,
+      "Inflight service": 0.3686556792105133,
+      "Cleanliness": 0.09637040167752957
+    },
+    "Baggage handling": {
+      "Age": -0.04752930821529978,
+      "Flight Distance": 0.06318413011189958,
+      "Departure Delay in Minutes": -0.0055731927189833184,
+      "Arrival Delay in Minutes": -0.00854167358739423,
+      "Inflight wifi service": 0.12092333472744815,
+      "Departure/Arrival time convenient": 0.07212561381399696,
+      "Ease of Online booking": 0.03876236641859236,
+      "Gate location": 0.002313445343460521,
+      "Food and drink": 0.0347461446781211,
+      "Online boarding": 0.08328016469488611,
+      "Seat comfort": 0.0745416138021369,
+      "Inflight entertainment": 0.3782100045444891,
+      "On-board service": 0.5191341941120491,
+      "Leg room service": 0.36954409208395633,
+      "Baggage handling": 1.0,
+      "Checkin service": 0.2331222163305146,
+      "Inflight service": 0.6285610871326185,
+      "Cleanliness": 0.0957926670074036
+    },
+    "Checkin service": {
+      "Age": 0.03548237585218939,
+      "Flight Distance": 0.07307176819697524,
+      "Departure Delay in Minutes": -0.018452937852878614,
+      "Arrival Delay in Minutes": -0.02036937136145783,
+      "Inflight wifi service": 0.04319261838355081,
+      "Departure/Arrival time convenient": 0.09333300968368619,
+      "Ease of Online booking": 0.011080760862057297,
+      "Gate location": -0.03542748282779974,
+      "Food and drink": 0.08729900659010346,
+      "Online boarding": 0.20446156302376026,
+      "Seat comfort": 0.1918544693613556,
+      "Inflight entertainment": 0.1208672361727146,
+      "On-board service": 0.24391432699439705,
+      "Leg room service": 0.15313722255903217,
+      "Baggage handling": 0.2331222163305146,
+      "Checkin service": 1.0,
+      "Inflight service": 0.23719720742356937,
+      "Cleanliness": 0.17958294553558804
+    },
+    "Inflight service": {
+      "Age": -0.04942722005194537,
+      "Flight Distance": 0.05753979518896882,
+      "Departure Delay in Minutes": -0.05481255208719383,
+      "Arrival Delay in Minutes": -0.059195844954586754,
+      "Inflight wifi service": 0.1104413916513954,
+      "Departure/Arrival time convenient": 0.07331752705146462,
+      "Ease of Online booking": 0.03527240013018899,
+      "Gate location": 0.0016807280588402593,
+      "Food and drink": 0.03399281356069491,
+      "Online boarding": 0.07457286303061139,
+      "Seat comfort": 0.06921779828334605,
+      "Inflight entertainment": 0.4048551815476832,
+      "On-board service": 0.5507821723190345,
+      "Leg room service": 0.3686556792105133,
+      "Baggage handling": 0.6285610871326185,
+      "Checkin service": 0.23719720742356937,
+      "Inflight service": 1.0,
+      "Cleanliness": 0.08877918343400565
+    },
+    "Cleanliness": {
+      "Age": 0.05361055072612423,
+      "Flight Distance": 0.0931485974847914,
+      "Departure Delay in Minutes": -0.014092583302395389,
+      "Arrival Delay in Minutes": -0.015773723472618694,
+      "Inflight wifi service": 0.1326979160936807,
+      "Departure/Arrival time convenient": 0.014292462071912058,
+      "Ease of Online booking": 0.01617852505330637,
+      "Gate location": -0.00382994156308241,
+      "Food and drink": 0.6577597343070511,
+      "Online boarding": 0.33151713506558106,
+      "Seat comfort": 0.678533913541873,
+      "Inflight entertainment": 0.6918146374078886,
+      "On-board service": 0.1232200545212144,
+      "Leg room service": 0.09637040167752957,
+      "Baggage handling": 0.0957926670074036,
+      "Checkin service": 0.17958294553558804,
+      "Inflight service": 0.08877918343400565,
+      "Cleanliness": 1.0
+    }
+  },
+  "mean_departure_delay_by_satisfaction": {
+    "satisfied": 12.608084397556913,
+    "dissatisfied": 16.503727984510608
+  }
+}
