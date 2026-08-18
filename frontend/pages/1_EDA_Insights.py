@@ -42,7 +42,7 @@ fig_class = px.bar(
     labels={"travel_class": "Class", "satisfaction_rate": "Satisfaction Rate"},
 )
 fig_class.update_yaxes(tickformat=".0%")
-st.plotly_chart(fig_class, use_container_width=True)
+st.plotly_chart(fig_class, width='stretch')
 
 # ---------------------------------------------------------------------------
 # Chart 3 — Satisfaction rate by Travel Type
@@ -57,7 +57,7 @@ fig_travel = px.bar(
     labels={"type_of_travel": "Type of Travel", "satisfaction_rate": "Satisfaction Rate"},
 )
 fig_travel.update_yaxes(tickformat=".0%")
-st.plotly_chart(fig_travel, use_container_width=True)
+st.plotly_chart(fig_travel, width='stretch')
 
 st.divider()
 
@@ -83,7 +83,7 @@ fig_dist = px.bar(
     y="count",
     labels={"rating": f"{selected_feature} Rating (0-5)", "count": "Number of Passengers"},
 )
-st.plotly_chart(fig_dist, use_container_width=True)
+st.plotly_chart(fig_dist, width='stretch')
 st.caption(f"Mean rating: {selected_data['mean_rating']:.2f}")
 
 st.divider()
@@ -102,7 +102,7 @@ fig_heatmap = px.imshow(
     text_auto=".2f",
 )
 fig_heatmap.update_layout(height=700)
-st.plotly_chart(fig_heatmap, use_container_width=True)
+st.plotly_chart(fig_heatmap, width='stretch')
 
 st.divider()
 
@@ -121,7 +121,7 @@ fig_delay = px.bar(
     text_auto=".1f",
     labels={"satisfaction": "Passenger Group", "mean_departure_delay": "Mean Departure Delay (min)"},
 )
-st.plotly_chart(fig_delay, use_container_width=True)
+st.plotly_chart(fig_delay, width='stretch')
 st.caption(
     "Note: this shows mean delay only, not the full distribution. "
     "A true boxplot would require raw per-passenger delay values, "
