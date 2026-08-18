@@ -24,10 +24,10 @@ from sklearn.metrics import (
 # ---------------------------------------------------------------------------
 # 1. Load data
 # ---------------------------------------------------------------------------
-df_train = pd.read_csv("train.csv")
+df_train = pd.read_csv("./training/train.csv")
 df_train = df_train.drop(columns=["Unnamed: 0", "id"])
 
-df_test = pd.read_csv("test.csv")
+df_test = pd.read_csv("./training/test.csv")
 df_train = df_test.drop(columns=["Unnamed: 0", "id"])
 
 X_train, y_train = df_train.drop(columns=["satisfaction"]), df_train["satisfaction"].apply(lambda x: False if x == "satisfied" else True)
@@ -133,7 +133,7 @@ plt.xlabel("False Positive Rate")
 plt.ylabel("True Positive Rate")
 plt.legend()
 plt.title("ROC Comparison")
-plt.savefig("roc_comparison.png")
+plt.savefig("./models/roc_comparison.png")
 
 # ---------------------------------------------------------------------------
 # 7. Metrics artifact (for /model-metrics — assembled fully once SHAP is added below)
@@ -181,16 +181,16 @@ metrics_artifact["shap_global_importance"] = [
 
 # save a SHAP summary/beeswarm plot as an image for the dashboard
 shap.summary_plot(shap_values, X_test_transformed, feature_names=feature_names, show=False)
-plt.savefig("../models/shap_summary.png", bbox_inches="tight")
+plt.savefig("./models/shap_summary.png", bbox_inches="tight")
 plt.close()
 
 # ---------------------------------------------------------------------------
 # 9. Write final metrics.json (after SHAP keys are added above)
 # ---------------------------------------------------------------------------
-with open("../models/metrics.json", "w") as f:
+with open("./models/metrics.json", "w") as f:
     json.dump(metrics_artifact, f, indent=2)
 
 # ---------------------------------------------------------------------------
 # 10. Save the fitted pipeline artifact
 # ---------------------------------------------------------------------------
-joblib.dump(final_pipeline, "../models/pipeline.joblib")
+joblib.dump(final_pipeline, "./models/pipeline.joblib")
