@@ -2,4 +2,6 @@
 backend/.backend-env/
 frontend/.frontend-env/
 guide.md
-*/__pycache__/
+**/__pycache__/
+backend/app/test.py
+training/test.py
