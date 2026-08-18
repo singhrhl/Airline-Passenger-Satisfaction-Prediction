@@ -1,0 +1,22 @@
+version: "3.9"
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./models:/app/models  # so retraining locally doesn't require rebuilding the image
+
+  frontend:
+    build:
+      context: .
+      dockerfile: frontend/Dockerfile
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=http://backend:8000  # "backend" = the service name above, Docker's internal DNS
+    depends_on:
+      - backend
