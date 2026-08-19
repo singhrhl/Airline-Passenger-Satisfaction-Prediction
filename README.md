@@ -111,6 +111,13 @@ airline_app/
 
 ---
 
+## Live Demo
+- Frontend: https://airline-passenger-satisfaction-prediction-kqdrgopvzcc8u36mm5bk.streamlit.app
+- Backend API docs: https://airline-passenger-satisfaction-prediction-2zmh.onrender.com/docs
+*(Backend is on a free tier and may take 30–60s to wake up on first request.)*
+
+---
+
 ## Running Locally (without Docker)
 
 **1. Backend**
