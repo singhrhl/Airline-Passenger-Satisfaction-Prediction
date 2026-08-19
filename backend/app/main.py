@@ -1,6 +1,7 @@
 """
 backend/app/main.py
 """
+import os
 import json
 from pathlib import Path
 from fastapi import FastAPI, HTTPException
@@ -12,7 +13,7 @@ from .schemas import (
     ModelMetricsResponse, EdaSummaryResponse, HealthResponse,
 )
 
-MODELS_DIR = Path(__file__).resolve().parent.parent.parent / "models"
+MODELS_DIR = Path(os.getenv("MODELS_DIR", Path(__file__).resolve().parent.parent.parent / "models"))
 
 app = FastAPI(title="Airline Passenger Satisfaction API")
 

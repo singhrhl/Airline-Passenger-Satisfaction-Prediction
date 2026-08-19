@@ -7,9 +7,9 @@ import joblib
 import shap
 import pandas as pd
 from pathlib import Path
+import os
 
-MODELS_DIR = Path(__file__).resolve().parent.parent.parent / "models"
-
+MODELS_DIR = Path(os.getenv("MODELS_DIR", Path(__file__).resolve().parent.parent.parent / "models"))
 # ---------------------------------------------------------------------------
 # 1. Load artifacts ONCE at module import
 # ---------------------------------------------------------------------------
