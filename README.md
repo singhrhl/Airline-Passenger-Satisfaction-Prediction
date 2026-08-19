@@ -53,9 +53,9 @@ tune a single one blindly:
 
 | Model                            | ROC-AUC | Notes                                                          |
 |----------------------------------|---------|----------------------------------------------------------------|
-| Logistic Regression (baseline)   | 0.924   | Linear boundary — establishes the floor                        |
-| XGBoost (default hyperparameters)| 0.994   | Large jump — confirms non-linear feature interactions matter   |
-| XGBoost (tuned, `GridSearchCV`)  | 0.9948  | Marginal gain over defaults (+0.0004)                          |
+| Logistic Regression (baseline)   | 0.9256  | Linear boundary — establishes the floor                        |
+| XGBoost (default hyperparameters)| 0.9951  | Large jump — confirms non-linear feature interactions matter   |
+| XGBoost (tuned, `GridSearchCV`)  | 0.9955  | Marginal gain over defaults (+0.0004)                          |
 
 **Key takeaway:** the jump from linear → tree ensemble was the significant gain in
 this problem; hyperparameter tuning on top of a strong default XGBoost model produced
