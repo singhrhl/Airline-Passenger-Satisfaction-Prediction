@@ -20,7 +20,7 @@ app = FastAPI(title="Airline Passenger Satisfaction API")
 # allow the Streamlit frontend (running on a different port) to call this API
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # tighten this to your actual frontend origin before any real deployment
+    allow_origins=["https://airline-passenger-satisfaction-prediction-kqdrgopvzcc8u36mm5bk.streamlit.app"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
