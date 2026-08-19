@@ -1,0 +1,7 @@
+# .dockerignore
+.git/
+**/__pycache__/
+backend/.backend-env/
+frontend/.frontend-env/
+training/train.csv
+*.pyc
