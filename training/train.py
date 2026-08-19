@@ -18,7 +18,7 @@ from sklearn.linear_model import LogisticRegression
 from xgboost import XGBClassifier
 from sklearn.metrics import (
     roc_auc_score, classification_report, roc_curve,
-    confusion_matrix, ConfusionMatrixDisplay,
+    confusion_matrix
 )
 
 # ---------------------------------------------------------------------------
@@ -28,7 +28,8 @@ df_train = pd.read_csv("./training/train.csv")
 df_train = df_train.drop(columns=["Unnamed: 0", "id"])
 
 df_test = pd.read_csv("./training/test.csv")
-df_train = df_test.drop(columns=["Unnamed: 0", "id"])
+df_test = df_test.drop(columns=["Unnamed: 0", "id"])
+df_test = df_test.rename(columns={"Arrival Delay inMinutes": "Arrival Delay in Minutes"})
 
 X_train, y_train = df_train.drop(columns=["satisfaction"]), df_train["satisfaction"].apply(lambda x: False if x == "satisfied" else True)
 X_test, y_test = df_test.drop(columns=["satisfaction"]), df_test["satisfaction"].apply(lambda x: False if x == "satisfied" else True)

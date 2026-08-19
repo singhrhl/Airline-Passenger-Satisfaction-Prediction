@@ -1,127 +1,127 @@
 {
   "best_params": {
-    "classifier__learning_rate": 0.1,
-    "classifier__max_depth": null,
+    "classifier__learning_rate": 0.05,
+    "classifier__max_depth": 10,
     "classifier__n_estimators": 200
   },
   "models": {
     "Logistic_Regression_baseline": {
-      "roc_auc": 0.9261469587539937,
+      "roc_auc": 0.9256016992450032,
       "classification_report": {
         "satisfied": {
-          "precision": 0.8666605905942398,
-          "recall": 0.8339033587652372,
-          "f1-score": 0.8499664804469274,
+          "precision": 0.8689529035208048,
+          "recall": 0.8332894852231869,
+          "f1-score": 0.8507476049780642,
           "support": 11403.0
         },
         "dissatisfied": {
-          "precision": 0.8737669954678753,
-          "recall": 0.8996088657105606,
-          "f1-score": 0.8864996449944214,
+          "precision": 0.8736121268532677,
+          "recall": 0.9016674672339258,
+          "f1-score": 0.8874181130546364,
           "support": 14573.0
         },
-        "accuracy": 0.8707653218355405,
+        "accuracy": 0.8716507545426547,
         "macro avg": {
-          "precision": 0.8702137930310576,
-          "recall": 0.866756112237899,
-          "f1-score": 0.8682330627206744,
+          "precision": 0.8712825151870363,
+          "recall": 0.8674784762285563,
+          "f1-score": 0.8690828590163503,
           "support": 25976.0
         },
         "weighted avg": {
-          "precision": 0.8706474106675186,
-          "recall": 0.8707653218355405,
-          "f1-score": 0.870462238336927,
+          "precision": 0.871566811036357,
+          "recall": 0.8716507545426547,
+          "f1-score": 0.8713204150411952,
           "support": 25976.0
         }
       },
       "confusion_matrix": [
         [
-          9509,
-          1894
+          9502,
+          1901
         ],
         [
-          1463,
-          13110
+          1433,
+          13140
         ]
       ]
     },
     "XGBoost_baseline": {
-      "roc_auc": 0.9995392051961512,
+      "roc_auc": 0.9951031773743343,
       "classification_report": {
         "satisfied": {
-          "precision": 0.9922096317280453,
-          "recall": 0.9828992370428834,
-          "f1-score": 0.9875324904180801,
+          "precision": 0.9715780925742128,
+          "recall": 0.944312900114005,
+          "f1-score": 0.9577514898158854,
           "support": 11403.0
         },
         "dissatisfied": {
-          "precision": 0.986716621253406,
-          "recall": 0.9939614355314623,
-          "f1-score": 0.990325778552627,
+          "precision": 0.9573625193043712,
+          "recall": 0.9783846840046662,
+          "f1-score": 0.9677594515713025,
           "support": 14573.0
         },
-        "accuracy": 0.9891053279950723,
+        "accuracy": 0.9634277794887589,
         "macro avg": {
-          "precision": 0.9894631264907257,
-          "recall": 0.9884303362871729,
-          "f1-score": 0.9889291344853536,
+          "precision": 0.9644703059392921,
+          "recall": 0.9613487920593355,
+          "f1-score": 0.9627554706935939,
           "support": 25976.0
         },
         "weighted avg": {
-          "precision": 0.9891279547320907,
-          "recall": 0.9891053279950723,
-          "f1-score": 0.989099574957068,
+          "precision": 0.9636029020421293,
+          "recall": 0.9634277794887589,
+          "f1-score": 0.9633661351293168,
           "support": 25976.0
         }
       },
       "confusion_matrix": [
         [
-          11208,
-          195
+          10768,
+          635
         ],
         [
-          88,
-          14485
+          315,
+          14258
         ]
       ]
     },
     "Best_XGB": {
-      "roc_auc": 0.9987243037301933,
+      "roc_auc": 0.995467405839952,
       "classification_report": {
         "satisfied": {
-          "precision": 0.9867904319885755,
-          "recall": 0.9695694115583618,
-          "f1-score": 0.9781041270402973,
+          "precision": 0.9724075743913435,
+          "recall": 0.9457160396386916,
+          "f1-score": 0.9588760947850442,
           "support": 11403.0
         },
         "dissatisfied": {
-          "precision": 0.976509612780937,
-          "recall": 0.9898442324847321,
-          "f1-score": 0.9831317089793832,
+          "precision": 0.9584173048501948,
+          "recall": 0.9790022644616757,
+          "f1-score": 0.9686004277130927,
           "support": 14573.0
         },
-        "accuracy": 0.9809439482599323,
+        "accuracy": 0.9643902063443178,
         "macro avg": {
-          "precision": 0.9816500223847562,
-          "recall": 0.979706822021547,
-          "f1-score": 0.9806179180098402,
+          "precision": 0.9654124396207692,
+          "recall": 0.9623591520501836,
+          "f1-score": 0.9637382612490685,
           "support": 25976.0
         },
         "weighted avg": {
-          "precision": 0.9810227087704928,
-          "recall": 0.9809439482599323,
-          "f1-score": 0.9809246903140231,
+          "precision": 0.9645587832755768,
+          "recall": 0.9643902063443178,
+          "f1-score": 0.9643316192599616,
           "support": 25976.0
         }
       },
       "confusion_matrix": [
         [
-          11056,
-          347
+          10784,
+          619
         ],
         [
-          148,
-          14425
+          306,
+          14267
         ]
       ]
     }
@@ -129,63 +129,63 @@
   "shap_global_importance": [
     {
       "feature": "remainder__Inflight wifi service",
-      "importance": 1.9896413087844849
+      "importance": 2.0927605628967285
     },
     {
       "feature": "cat__Type of Travel_Business travel",
-      "importance": 1.6241780519485474
+      "importance": 1.6298446655273438
     },
     {
       "feature": "remainder__Online boarding",
-      "importance": 1.1200824975967407
+      "importance": 1.289089322090149
     },
     {
       "feature": "cat__Customer Type_Loyal Customer",
-      "importance": 0.8959580659866333
+      "importance": 0.802716076374054
     },
     {
       "feature": "cat__Class_Business",
-      "importance": 0.360604852437973
-    },
-    {
-      "feature": "remainder__Checkin service",
-      "importance": 0.3170228898525238
-    },
-    {
-      "feature": "remainder__Inflight service",
-      "importance": 0.2688462734222412
-    },
-    {
-      "feature": "remainder__Seat comfort",
-      "importance": 0.2646864354610443
+      "importance": 0.4916114807128906
     },
     {
       "feature": "remainder__Baggage handling",
-      "importance": 0.2635316252708435
+      "importance": 0.2716664969921112
     },
     {
-      "feature": "remainder__Inflight entertainment",
-      "importance": 0.2625924050807953
+      "feature": "remainder__Checkin service",
+      "importance": 0.26772549748420715
+    },
+    {
+      "feature": "remainder__Inflight service",
+      "importance": 0.24079540371894836
+    },
+    {
+      "feature": "remainder__Seat comfort",
+      "importance": 0.23561997711658478
     },
     {
       "feature": "remainder__Gate location",
-      "importance": 0.2611241042613983
+      "importance": 0.20789049565792084
     },
     {
       "feature": "remainder__Age",
-      "importance": 0.24413307011127472
+      "importance": 0.20755985379219055
+    },
+    {
+      "feature": "remainder__Inflight entertainment",
+      "importance": 0.19879387319087982
+    },
+    {
+      "feature": "remainder__Leg room service",
+      "importance": 0.1909773051738739
     },
     {
       "feature": "remainder__Cleanliness",
-      "importance": 0.22295790910720825
+      "importance": 0.1777479648590088
     },
     {
-      "feature": "remainder__On-board service",
-      "importance": 0.2144957035779953
-    },
-    {
-      "feature": "remainder__Departure/Arrival time convenient",
-      "importance": 0.2019839733839035
+      "feature": "num_impute__Arrival Delay in Minutes",
+      "importance": 0.16438451409339905
     }
   ]
 }
