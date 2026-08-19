@@ -5,7 +5,7 @@ import pandas as pd
 import plotly.express as px
 import os
 
-API_URL = os.getenv("API_URL", "http://localhost:8000")
+API_URL = st.secrets.get("API_URL", os.getenv("API_URL", "http://localhost:8000"))
 
 st.set_page_config(page_title="Live Inference", layout="wide")
 st.title("Live Passenger Inference & CX Intervention")
